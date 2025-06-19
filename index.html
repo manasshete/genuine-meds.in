@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenuineMeds.in - Trusted Drug Information Platform</title>
+    <meta name="description" content="Your trusted source for comprehensive drug information, dosages, side effects, and medical guidance.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="logo"><img src="logo.png" alt="GenuineMeds.in Logo"></h1>
+                    <span class="tagline"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="drug-index.html" class="nav-link">Drug Index</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Your Trusted Source for Drug Information</h2>
+                    <p class="hero-description">Access comprehensive, reliable information about medications, dosages, side effects, and precautions from a trusted medical platform.</p>
+                    
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="drugSearch" placeholder="Search for a drug (e.g., Aspirin, Ibuprofen)" class="search-input">
+                            <button class="search-btn" onclick="searchDrug()">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="searchResults" class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3 class="section-title">Why Choose GenuineMeds.in?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c.552 0 1-.448 1-1V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3c0 .552.448 1 1 1h18z"></path>
+                                <path d="M21 16c.552 0 1-.448 1-1v-3c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v3c0 .552.448 1 1 1h18z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="feature-title">Verified Information</h4>
+                        <p class="feature-description">All drug information is carefully researched and verified by medical professionals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="feature-title">Always Updated</h4>
+                        <p class="feature-description">Our database is regularly updated with the latest medical guidelines and drug information.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h4 class="feature-title">Easy Navigation</h4>
+                        <p class="feature-description">Find the information you need quickly with our intuitive search and categorization system.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-drugs">
+            <div class="container">
+                <h3 class="section-title">Popular Medications</h3>
+                <div class="drugs-grid">
+                    <a href="aspirin.html" class="drug-card">
+                        <h4 class="drug-name">Aspirin</h4>
+                        <p class="drug-category">Pain Relief & Anti-inflammatory</p>
+                        <span class="drug-arrow">→</span>
+                    </a>
+                    <a href="ibuprofen.html" class="drug-card">
+                        <h4 class="drug-name">Ibuprofen</h4>
+                        <p class="drug-category">NSAID Pain Reliever</p>
+                        <span class="drug-arrow">→</span>
+                    </a>
+                    <a href="paracetamol.html" class="drug-card">
+                        <h4 class="drug-name">Paracetamol</h4>
+                        <p class="drug-category">Pain & Fever Relief</p>
+                        <span class="drug-arrow">→</span>
+                    </a>
+                    <a href="amoxicillin.html" class="drug-card">
+                        <h4 class="drug-name">Amoxicillin</h4>
+                        <p class="drug-category">Antibiotic</p>
+                        <span class="drug-arrow">→</span>
+                    </a>
+                </div>
+                <div class="view-all">
+                    <a href="drug-index.html" class="btn-secondary">View All Medications</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">GenuineMeds.in</h4>
+                    <p class="footer-description">Your trusted source for comprehensive drug information and medical guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="drug-index.html">Drug Index</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Disclaimer</h4>
+                    <p class="footer-text">This information is for educational purposes only. Always consult with a healthcare professional before making medical decisions.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GenuineMeds.in. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

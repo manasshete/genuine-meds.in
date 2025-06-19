@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Index - GenuineMeds.in</title>
+    <meta name="description" content="Complete alphabetical index of all medications available on GenuineMeds.in">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="logo">GenuineMeds.in</h1>
+                    <span class="tagline">Trusted Drug Information</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="drug-index.html" class="nav-link active">Drug Index</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="drug-header">
+            <div class="container">
+                <h2 class="drug-title">Drug Index</h2>
+                <p class="drug-subtitle">Browse our comprehensive database of medications</p>
+            </div>
+        </section>
+
+        <section class="drug-content">
+            <div class="container">
+                <div class="search-container mb-5">
+                    <div class="search-box">
+                        <input type="text" id="drugSearch" placeholder="Search for a drug..." class="search-input">
+                        <button class="search-btn" onclick="searchDrug()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+
+                <div class="alphabet-filter mb-4">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterByLetter('all')">All</button>
+                        <button class="filter-btn" onclick="filterByLetter('A')">A</button>
+                        <button class="filter-btn" onclick="filterByLetter('B')">B</button>
+                        <button class="filter-btn" onclick="filterByLetter('C')">C</button>
+                        <button class="filter-btn" onclick="filterByLetter('D')">D</button>
+                        <button class="filter-btn" onclick="filterByLetter('E')">E</button>
+                        <button class="filter-btn" onclick="filterByLetter('F')">F</button>
+                        <button class="filter-btn" onclick="filterByLetter('G')">G</button>
+                        <button class="filter-btn" onclick="filterByLetter('H')">H</button>
+                        <button class="filter-btn" onclick="filterByLetter('I')">I</button>
+                        <button class="filter-btn" onclick="filterByLetter('L')">L</button>
+                        <button class="filter-btn" onclick="filterByLetter('M')">M</button>
+                        <button class="filter-btn" onclick="filterByLetter('O')">O</button>
+                        <button class="filter-btn" onclick="filterByLetter('P')">P</button>
+                    </div>
+                </div>
+
+                <div class="drugs-list" id="drugsList">
+                    <div class="drug-item" data-letter="A">
+                        <a href="aspirin.html" class="drug-link">
+                            <h3 class="drug-name">Aspirin</h3>
+                            <p class="drug-category">Pain Relief & Anti-inflammatory</p>
+                            <p class="drug-description">Used for pain relief, reducing inflammation, and preventing blood clots.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="drug-item" data-letter="A">
+                        <a href="amoxicillin.html" class="drug-link">
+                            <h3 class="drug-name">Amoxicillin</h3>
+                            <p class="drug-category">Antibiotic</p>
+                            <p class="drug-description">Penicillin antibiotic used to treat bacterial infections.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="drug-item" data-letter="A">
+                        <a href="atorvastatin.html" class="drug-link">
+                            <h3 class="drug-name">Atorvastatin</h3>
+                            <p class="drug-category">Cholesterol Medication</p>
+                            <p class="drug-description">Statin medication used to lower cholesterol and reduce cardiovascular risk.</p>
+                        </a>
+                    </div>
+
+                    <div class="drug-item" data-letter="I">
+                        <a href="ibuprofen.html" class="drug-link">
+                            <h3 class="drug-name">Ibuprofen</h3>
+                            <p class="drug-category">NSAID Pain Reliever</p>
+                            <p class="drug-description">Nonsteroidal anti-inflammatory drug for pain, fever, and inflammation.</p>
+                        </a>
+                    </div>
+
+                    <div class="drug-item" data-letter="L">
+                        <a href="lisinopril.html" class="drug-link">
+                            <h3 class="drug-name">Lisinopril</h3>
+                            <p class="drug-category">Blood Pressure Medication</p>
+                            <p class="drug-description">ACE inhibitor used to treat high blood pressure and heart failure.</p>
+                        </a>
+                    </div>
+
+                    <div class="drug-item" data-letter="M">
+                        <a href="metformin.html" class="drug-link">
+                            <h3 class="drug-name">Metformin</h3>
+                            <p class="drug-category">Diabetes Medication</p>
+                            <p class="drug-description">First-line treatment for type 2 diabetes to control blood sugar.</p>
+                        </a>
+                    </div>
+
+                    <div class="drug-item" data-letter="O">
+                        <a href="omeprazole.html" class="drug-link">
+                            <h3 class="drug-name">Omeprazole</h3>
+                            <p class="drug-category">Acid Reducer</p>
+                            <p class="drug-description">Proton pump inhibitor for treating acid reflux and stomach ulcers.</p>
+                        </a>
+                    </div>
+
+                    <div class="drug-item" data-letter="P">
+                        <a href="paracetamol.html" class="drug-link">
+                            <h3 class="drug-name">Paracetamol</h3>
+                            <p class="drug-category">Pain & Fever Relief</p>
+                            <p class="drug-description">Analgesic and antipyretic for pain relief and fever reduction.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">GenuineMeds.in</h4>
+                    <p class="footer-description">Your trusted source for comprehensive drug information and medical guidance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="drug-index.html">Drug Index</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Disclaimer</h4>
+                    <p class="footer-text">This information is for educational purposes only. Always consult with a healthcare professional before making medical decisions.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GenuineMeds.in. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterByLetter(letter) {
+            const drugItems = document.querySelectorAll('.drug-item');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter drugs
+            drugItems.forEach(item => {
+                if (letter === 'all' || item.dataset.letter === letter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    
+    <style>
+        .alphabet-filter {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border-color);
+            background: var(--background);
+            color: var(--text-primary);
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .drugs-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .drug-item {
+            background: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .drug-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+        
+        .drug-link {
+            display: block;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .drug-item .drug-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .drug-item .drug-category {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+        
+        .drug-item .drug-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .filter-buttons {
+                gap: 0.25rem;
+            }
+            
+            .filter-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</body>
+</html>
