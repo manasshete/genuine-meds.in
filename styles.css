@@ -550,3 +550,11 @@ body {
 .mt-3 { margin-top: 1rem; }
 .mt-4 { margin-top: 1.5rem; }
 .mt-5 { margin-top: 2rem; }
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: block;
+}
