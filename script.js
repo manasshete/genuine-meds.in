@@ -12,11 +12,25 @@ const drugDatabase = [
         url: "ibuprofen.html",
         keywords: ["ibuprofen", "advil", "motrin", "nsaid", "pain relief", "anti-inflammatory"]
     },
+
+    {
+        name: "Acelofenac",
+        category: "NSAID Pain Reliever",
+        url: "acelofenac.html",
+        keywords: ["acelofenac", "pain relief", "anti-inflammatory"]
+    },
     {
         name: "Paracetamol",
         category: "Pain & Fever Relief",
         url: "paracetamol.html",
         keywords: ["paracetamol", "acetaminophen", "tylenol", "pain relief", "fever"]
+    },
+
+    {
+        name: "Diclofenac",
+        category: "NSAID Pain Reliever",
+        url: "diclofenac.html",
+        keywords: ["diclofenac", "voltaren", "nsaid", "pain relief", "anti-inflammatory"]
     },
     {
         name: "Amoxicillin",
