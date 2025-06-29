@@ -558,6 +558,19 @@ body {
 
 
 
+.nav-menu {
+    display: none;
+    list-style: none;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 .nav-menu.active {
     display: block;
+}
+
+.nav-toggle {
+    font-size: 24px;
+    cursor: pointer;
 }
