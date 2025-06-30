@@ -14,6 +14,12 @@ const drugDatabase = [
     },
 
     {
+        name: "Omeprazole",
+        category: "Proton Pump Inhibitor",
+        url: "omeprazole.html",
+        keywords: ["omeprazole", "prilosec", "acid reducer", "heartburn", "gerd"]
+    },
+    {
         name: "Acelofenac",
         category: "NSAID Pain Reliever",
         url: "acelofenac.html",
@@ -215,3 +221,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D929Y5ENSD"></script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D929Y5ENSD');

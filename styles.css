@@ -471,14 +471,27 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-    }
-    
-    .nav-toggle {
+      .nav-toggle {
         display: flex;
     }
-    
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: var(--background-light);
+        padding: 1rem;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        right: 1rem;
+        border-radius: var(--radius);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -560,11 +573,3 @@ body {
 
 
 
-.nav-menu.active {
-    display: block;
-}
-
-.nav-toggle {
-    font-size: 24px;
-    cursor: pointer;
-}
