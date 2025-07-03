@@ -14,6 +14,31 @@ const drugDatabase = [
     },
 
     {
+        name: "Rabeprazole",
+        category: "Proton Pump Inhibitor",
+        url: "rabeprazole.html",
+        keywords: ["rabeprazole", "aciphex", "acid reducer", "heartburn", "gerd"]
+    },
+
+    {
+        name: "Pantoprazole",
+        category: "Proton Pump Inhibitor",
+        url: "pantoprazole.html",
+        keywords: ["pantoprazole", "protonix", "acid reducer", "heartburn", "gerd"]
+    },
+    {
+        name: "Ranitidine",
+        category: "H2 Antagonist",
+        url: "ranitidine.html",
+        keywords: ["ranitidine", "zantac", "acid reducer", "heartburn", "ulcer"]
+    },
+    {
+        name: "Rosuvastatin",
+        category: "Cholesterol Medication",
+        url: "rosuvastatin.html",
+        keywords: ["rosuvastatin", "crestor", "statin", "cholesterol"]
+    },
+    {
         name: "Omeprazole",
         category: "Proton Pump Inhibitor",
         url: "omeprazole.html",
