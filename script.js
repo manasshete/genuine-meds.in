@@ -92,6 +92,13 @@ const drugDatabase = [
         category: "Acid Reducer",
         url: "omeprazole.html",
         keywords: ["omeprazole", "prilosec", "acid reducer", "heartburn", "gerd"]
+    },
+
+    {
+        name: "Metochlopramide",
+        category: "Gastrointestinal Medication",
+        url: "metochlopramide.html",
+        keywords: ["metochlopramide", "antiemetic", "nausea", "vomiting", "gastrointestinal"]
     }
 ];
 
