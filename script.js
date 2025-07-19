@@ -117,6 +117,13 @@ const drugDatabase = [
     },
 
     {
+        name: "Loperamide",
+        category: "Antidiarrheal",
+        url: "loperamide.html",
+        keywords: ["loperamide", "imodium", "antidiarrheal", "diarrhea"]
+    },
+
+    {
         name: "Metochlopramide",
         category: "Gastrointestinal Medication",
         url: "metochlopramide.html",
