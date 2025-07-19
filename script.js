@@ -66,6 +66,13 @@ const drugDatabase = [
     },
 
     {
+        name: "Palonosetron",
+        category: "Antiemetic",
+        url: "palonosetron.html",
+        keywords: ["granisetron", "antiemetic", "nausea", "vomiting"]
+    },
+
+    {
         name: "Paracetamol",
         category: "Pain & Fever Relief",
         url: "paracetamol.html",
