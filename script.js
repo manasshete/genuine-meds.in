@@ -57,6 +57,14 @@ const drugDatabase = [
         url: "ondansetron.html",
         keywords: ["ondansetron", "antiemetic", "nausea", "vomiting"]
     },
+    
+    {
+        name: "Granisetron",
+        category: "Antiemetic",
+        url: "granisetron.html",
+        keywords: ["granisetron", "antiemetic", "nausea", "vomiting"]
+    },
+
     {
         name: "Paracetamol",
         category: "Pain & Fever Relief",
