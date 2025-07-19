@@ -50,6 +50,13 @@ const drugDatabase = [
         url: "acelofenac.html",
         keywords: ["acelofenac", "pain relief", "anti-inflammatory"]
     },
+
+    {
+        name: "Ondansetron",
+        category: "Antiemetic",
+        url: "ondansetron.html",
+        keywords: ["ondansetron", "antiemetic", "nausea", "vomiting"]
+    },
     {
         name: "Paracetamol",
         category: "Pain & Fever Relief",
