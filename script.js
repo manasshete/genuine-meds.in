@@ -52,6 +52,19 @@ const drugDatabase = [
     },
 
     {
+        name: "Bisacodyl",
+        category: "Laxative",
+        url: "bisacodyl.html",
+        keywords: ["bisacodyl", "laxative", "constipation", "bowel movement"]
+    },
+
+    {
+        name: "Metformin",
+        category: "Diabetes Medication",
+        url: "metformin.html",
+        keywords: ["metformin", "diabetes", "blood sugar", "type 2 diabetes"]
+    },
+    {
         name: "Ondansetron",
         category: "Antiemetic",
         url: "ondansetron.html",

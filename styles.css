@@ -67,6 +67,16 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.logo span {
+  color: var(--secondary-color);
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
