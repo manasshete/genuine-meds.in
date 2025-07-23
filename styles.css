@@ -456,7 +456,7 @@ body {
 
 .drug-section {
     margin-bottom: 3rem;
-    border-bottom: 3px solid var(--primary-color);
+    
 }
 
 .drug-section h3 {
@@ -464,6 +464,9 @@ body {
     font-weight: bold;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
+    border-bottom: 3px solid var(--primary-color);
+
+
   
 }
 
