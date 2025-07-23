@@ -489,6 +489,10 @@ body {
         display: flex;
     }
 
+    .padding {
+        padding: 2rem 1rem;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -527,6 +531,10 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 0.5rem;
+    }
+
+    .padding {
+        padding: 2rem;
     }
 
     
